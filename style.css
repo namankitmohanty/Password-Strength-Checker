@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right bottom,
+    #000000,
+    #000000,
+    #181719,
+    #1f1f22,
+    #25282b,
+    #25282b,
+    #25282b,
+    #25282b,
+    #1f1f22,
+    #181719,
+    #000000,
+    #000000
+  );
+}
+.container {
+  position: relative;
+  background-color: #000000;
+  width: 30rem;
+  height: 10rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.container h2 {
+  color: #414141;
+}
+.passwordInput {
+  width: 60%;
+  position: relative;
+}
+#pass {
+  width: 80%;
+  padding: 0.2rem;
+  background-color: #414141;
+  border: none;
+  outline: none;
+}
+#showhide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  background-color: #1f1f22;
+  color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 0.15rem;
+  cursor: pointer;
+}
+.btnBox{
+    width: 50%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#btn , #rst{
+    padding: 0.2rem 1rem;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    background-color: #1f1f22;
+    color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+}
+.strength {
+  position: absolute;
+  background: #161616;
+  width: 100%;
+  height: 0.2rem;
+  bottom: 0;
+  left: 0;
+}
+.strengthBar{
+    height: 100%;
+    background: #1b1b1b;
+    width: 0%;
+}
+
+
+@media screen and (max-width:400px)
+{
+    .container{
+        width: 90%;
+    }
+    .container h2{
+        font-size: 1.1rem;
+    }
+    .passwordInput{
+        width: 90%;
+    }
+    .btnBox{
+        width: 100%;
+    }
+}
